@@ -151,7 +151,13 @@ h2 {
   justify-content: center; /* centra horizontal */
   align-items: center; /* centra vertical */
   z-index: 1000; /* encima de todo */
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Asegura que el contenido se apile verticalmente */
+  overflow: hidden;
+}
+
   
 }
 
@@ -272,3 +278,4 @@ h2 {
 .texto-editable {
   text-align: justify;
 }
+
