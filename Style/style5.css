@@ -1,212 +1,142 @@
-/* cuerpo general */
+/* 🌸 Estilo general del cuerpo */
 body {
-  background: #fddde6; /* fondo rosado */
-  font-family: 'Comic Sans MS', cursive; /* fuente alegre */
-  text-align: center; /* centra contenido */
-  color: #333; /* texto gris oscuro */
-  padding: 20px; /* espacio interno */
-  box-shadow: 0 0 10px #f82a6f; /* sombra decorativa */
+  background: #fddde6;
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+  color: #333;
+  padding: 20px;
+  box-shadow: 0 0 10px #f82a6f;
 }
 
-/* encabezado */
+/* 🧁 Encabezado */
 header {
-  background: #ffffff; /* fondo blanco */
-  padding: 20px; /* espacio interno */
-  border-radius: 10px; /* bordes suaves */
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-/* título principal */
 h1 {
-  font-size: 2.5em; /* tamaño grande */
-  color: #000000; /* color negro */
+  font-size: 2.5em;
+  color: #000000;
 }
 
-/* imagen de Snoopy */
+/* 🐶 Imagen de Snoopy */
 .snoopy-img {
-  width: 250px; /* ancho fijo */
-  margin: 20px auto; /* centrado */
-  border-radius: 15px; /* bordes redondeados */
+  width: 250px;
+  margin: 20px auto;
+  border-radius: 15px;
 }
 
-/* bloque del mensaje */
+/* 💌 Bloque del mensaje */
 .message {
-  font-size: 1.2em; /* texto grande */
-  margin: 30px auto; /* centrado */
-  max-width: 600px; /* ancho limitado */
-  background: #ffffff; /* fondo blanco */
-  padding: 20px; /* espacio interno */
-  border-radius: 10px; /* bordes suaves */
-  box-shadow: 0 0 10px #f82a6f; /* sombra rosa */
+  font-size: 1.2em;
+  margin: 30px auto;
+  max-width: 600px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #f82a6f;
 }
 
-/* pie de página */
+/* 📎 Pie de página */
 footer {
-  margin-top: 50px; /* Espacio superior para separar el pie de página del contenido anterior */
-  font-size: 2.0em; /* Texto más pequeño para el pie de página */
-  color: #000000; /* Color gris claro para que no compita con el contenido principal */
+  margin-top: 50px;
+  font-size: 2em;
+  color: #000000;
 }
 
-/* contenedor de botones */
-.nav-buttons {
-  margin-top: 15px; /* espacio arriba */
-}
-
-/* botón de navegación */
-.nav-btn {
-  display: inline-block; /* en línea */
-  background-color: #ffb6c1; /* fondo rosado */
-  color: #fff; /* texto blanco */
-  text-decoration: none; /* sin subrayado */
-  padding: 10px 20px; /* espacio interno */
-  margin: 5px; /* separación entre botones */
-  border-radius: 20px; /* bordes redondeados */
-  font-weight: bold; /* texto en negrita */
-  transition: background-color 0.3s ease; /* efecto hover */
-}
-
-/* efecto hover en botón */
-.nav-btn:hover {
-  background-color: #ff69b4; /* rosa más fuerte */
-}
-
-/* contenedor de collage */
-.collage-container {
-  display: flex; /* en fila */
-  flex-wrap: wrap; /* varias líneas */
-  justify-content: center; /* centrado */
-  gap: 20px; /* espacio entre imágenes */
-  margin-top: 30px; /* separación arriba */
-}
-
-/* imagen del collage */
-.collage-img {
-  width: 200px; /* ancho fijo */
-  height: 200px; /* alto fijo */
-  object-fit: cover; /* recorte proporcional */
-  border-radius: 15px; /* bordes suaves */
-  box-shadow: 0 0 10px #f0c0d0; /* sombra rosa claro */
-  transition: transform 0.3s ease; /* animación hover */
-}
-
-/* efecto hover en imagen */
-.collage-img:hover {
-  transform: scale(1.05); /* agranda al pasar cursor */
-}
-
-/* subtítulo */
-h2 {
-  font-size: 2em; /* tamaño grande */
-  margin-top: 20px; /* espacio arriba */
-  color: #000; /* color negro */
-}
-
-/* contenido general */
-.contenido {
-  padding: 40px; /* espacio interno */
-  text-align: center; /* centrado */
-}
-
-/* título dentro de contenido */
-.contenido h1 {
-  font-size: 2.5em; /* tamaño grande */
-  margin-bottom: 20px; /* espacio abajo */
-}
-
-/* párrafo dentro de contenido */
-.contenido p {
-  font-size: 1.2em; /* texto grande */
-  max-width: 600px; /* ancho limitado */
-  margin: auto; /* centrado */
-}
-
-/* botón ver carta */
+/* 💖 Botón ver carta */
 .btn-ver {
-  margin-top: 40px; /* espacio arriba */
-  padding: 20px 32px; /* tamaño botón */
-  font-size: 18px; /* texto grande */
-  background-color: #ffb6c1; /* fondo rosado */
-  color: white; /* texto blanco */
-  border: none; /* sin borde */
-  border-radius: 30px; /* bordes suaves */
-  
-  font-family: 'Comic Sans MS', cursive; /* fuente divertida */
-  cursor: pointer; /* cursor de mano */
+  margin-top: 40px;
+  padding: 20px 32px;
+  font-size: 18px;
+  background-color: #ffb6c1;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-family: 'Comic Sans MS', cursive;
+  cursor: pointer;
+  box-shadow: 0 0 8px #f82a6f;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* hover en botón ver carta */
 .btn-ver:hover {
-  background-color: #ffb6c1; /* mismo color (puedes cambiarlo) */
+  background-color: #f82a6f;
+  transform: scale(1.05);
 }
 
-/* capa borrosa */
+/* 🌫️ Capa borrosa */
 .overlay {
-  position: fixed; /* cubre toda la pantalla */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(8px); /* efecto borroso */
-  background-color: rgba(255, 255, 255, 0.2); /* capa translúcida */
-  display: flex;
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.2);
+  display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   z-index: 1000;
+  overflow: hidden;
 }
 
-/* sobre visual */
+/* ✉️ Sobre visual */
 .sobre {
   position: relative;
-  width: 900px; /* ancho del sobre */
-  height: 800px; /* alto del sobre */
-  background: #e0cda9; /* color papel */
-  border: 4px solid #b89b72; /* borde marrón */
-  border-radius: 40px; /* bordes suaves */
-  overflow: hidden; /* oculta contenido fuera */
-  cursor: pointer; /* cursor de mano */
-  box-shadow: 0 0 40px rgba(0,0,0,0.3); /* sombra profunda */
+  width: 900px;
+  height: 800px;
+  background: #e0cda9;
+  border: 4px solid #b89b72;
+  border-radius: 40px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 0 40px rgba(0,0,0,0.3);
+  animation: entradaSuave 0.6s ease-out;
 }
 
-/* solapa del sobre */
+/* 🔺 Solapa del sobre */
 .solapa {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 65%; /* mitad superior */
-  background: #d4b483; /* color solapa */
-  clip-path: polygon(0 0, 100% 0, 50% 100%); /* forma triangular */
-  transition: transform 0.5s ease; /* animación al abrir */
-  transform-origin: top center; /* punto de giro */
+  height: 65%;
+  background: #d4b483;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  transition: transform 0.5s ease;
+  transform-origin: top center;
 }
 
-/* carta dentro del sobre */
+/* 📜 Carta dentro del sobre */
 .carta {
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fff0f5; /* rosa lavanda suave */
+  background: #fff0f5;
   padding: 40px;
   box-sizing: border-box;
   font-size: 1.9em;
   border-radius: 10px;
   box-shadow: 0 0 10px #f82a6f;
   font-family: 'Comic Sans MS', cursive;
-  transition: top 1s ease-in-out; /* animación más suave */
+  transition: top 1s ease-in-out;
+  overflow-y: auto;
 }
 
-
-/* animación al abrir sobre */
+/* 🧠 Animación al abrir */
 .sobre.abierto .solapa {
-  transform: rotateX(180deg); /* gira solapa */
+  transform: rotateX(180deg);
 }
 
 .sobre.abierto .carta {
-  top: 0; /* muestra carta */
+  top: 0;
 }
 
+/* 🎞️ Animación de entrada */
 @keyframes entradaSuave {
   from {
     transform: scale(0.8);
@@ -218,14 +148,11 @@ h2 {
   }
 }
 
-.sobre {
-  animation: entradaSuave 0.6s ease-out;
-}
-
+/* 💗 Corazones flotantes */
 .corazones {
   position: absolute;
   bottom: 0;
-  left: 45%;
+  left: 50%;
   transform: translateX(-50%);
   pointer-events: none;
 }
@@ -247,15 +174,16 @@ h2 {
   100% { transform: translateY(-200px) scale(0.8); opacity: 0; }
 }
 
+/* ❌ Botón cerrar carta */
 .btn-x {
   position: absolute;
   top: 16px;
   right: 20px;
-  background-color: #ffb6c1; /* mismo rosa que el botón principal */
-  border: 2px solid #f82a6f; /* borde decorativo */
+  background-color: #ffb6c1;
+  border: 2px solid #f82a6f;
   font-size: 20px;
   color: white;
-  border-radius: 12px; /* bordes suaves pero no redondos */
+  border-radius: 12px;
   padding: 4px 12px;
   cursor: pointer;
   font-family: 'Comic Sans MS', cursive;
@@ -264,7 +192,13 @@ h2 {
 }
 
 .btn-x:hover {
-  background-color: #f82a6f; /* rosa más intenso al pasar el mouse */
+  background-color: #f82a6f;
   transform: scale(1.05);
 }
 
+/* 📄 Texto de la carta */
+.texto-editable {
+  text-align: justify;
+  pointer-events: none; /* evita edición */
+  user-select: none;     /* evita selección */
+}
