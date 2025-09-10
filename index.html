@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+</head>
+<body>
+  <script src="app.js"></script>
+  <style>
+/* collage style*/
+body {
+  background: #fddde6; /* Establece el color de fondo blanco para toda la página */
+  font-family: 'Comic Sans MS', cursive; /* Usa una fuente divertida y cursiva, ideal para un diseño romántico y alegre */
+  text-align: center; /* Centra todo el contenido del cuerpo horizontalmente */
+  color: #333; /* Define el color del texto principal en gris oscuro */
+  padding: 20px; /* Agrega espacio interno alrededor del contenido del body */
+  box-shadow: 0 0 10px #f82a6f;
+}
+
+header {
+  background: #ffffff; /* Fondo rosado claro para el encabezado, da un toque romántico */
+  padding: 20px; /* Espacio interno para que el contenido no esté pegado a los bordes */
+  border-radius: 10px; /* Bordes redondeados para un estilo más suave y amigable */
+}
+
+h1 {
+  font-size: 2.5em; /* Tamaño grande para el título principal */
+  color: #000000; /* Color negro para que el título destaque */
+}
+
+.snoopy-img {
+  width: 250px; /* Tamaño fijo para la imagen de Snoopy */
+  margin: 20px auto; /* Espacio alrededor de la imagen y centrado horizontal */
+  border-radius: 15px; /* Bordes redondeados para que la imagen se vea más estética */
+}
+
+.message {
+  font-size: 1.2em; /* Texto ligeramente más grande para facilitar la lectura */
+  margin: 30px auto; /* Espacio alrededor y centrado horizontal */
+  max-width: 600px; /* Limita el ancho para que el texto no se extienda demasiado */
+  background: #ffffff; /* Fondo rosado claro para mantener la coherencia visual */
+  padding: 20px; /* Espacio interno para que el texto no esté pegado a los bordes */
+  border-radius: 10px; /* Bordes redondeados para suavizar el diseño */
+  box-shadow: 0 0 10px #f82a6f; /* Sombra suave para dar profundidad al cuadro del mensaje */
+}
+
+footer {
+  margin-top: 50px; /* Espacio superior para separar el pie de página del contenido anterior */
+  font-size: 2.0em; /* Texto más pequeño para el pie de página */
+  color: #000000; /* Color gris claro para que no compita con el contenido principal */
+}
+
+.nav-buttons {
+  margin-top: 15px;
+}
+
+.nav-btn {
+  display: inline-block;
+  background-color: #ffb6c1;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #ff69b4;
+}
+
+.collage-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .collage-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #f0c0d0;
+      transition: transform 0.3s ease;
+    }
+
+    .collage-img:hover {
+      transform: scale(1.05);
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-top: 20px;
+      color: #000;
+    }
+
+    .nav-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px auto;
+  padding: 12px;
+  background-color: #fff0f5; /* fondo suave tipo rosa claro */
+  border-radius: 20px;
+  box-shadow: 0 0 12px #f82a6f;
+  max-width: 95%;
+}
+
+.nav-buttons button {
+  background: linear-gradient(145deg, #f82a6f, #ffb6c1);
+  color: #fff;
+  border: none;
+  padding: 22px 34px;
+  border-radius: 40px;
+  font-size: 1.5em;
+  font-family: 'Comic Sans MS', cursive;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(248, 42, 111, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.nav-buttons button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 12px rgba(248, 42, 111, 0.4);
+  background: linear-gradient(145deg, #ff69b4, #ffb6c1);
+}
+.Family-img {
+  width: 500px; /* antes era 250px */
+  height: auto; /* mantiene proporción */
+  margin: 20px auto;
+  border-radius: 15px;
+}
+
+.Family2 {
+  width: 500px; /* antes era 250px */
+  height: auto; /* mantiene proporción */
+  margin: 20px auto;
+  border-radius: 15px;
+}
+
+.btn-audio {
+  display: block;
+  background: linear-gradient(145deg, #f82a6f, #ffb6c1);
+  color: white;
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 0 10px #f82a6f;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 0 20px 0 auto; /* ⬅️ arriba del todo, alineado a la derecha */
+}
+
+
+.btn-audio:hover {
+  background: linear-gradient(145deg, #ff69b4, #ffb6c1);
+  transform: scale(1.05);
+}
+
+
+.btn-audio:hover {
+  background: linear-gradient(145deg, #ff69b4, #ffb6c1);
+  transform: scale(1.05);
+}
+
+/* 🎬 Animación suave al cargar contenido */
+.fade-in {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+</style>
+      <!-- 🎵 Reproductor de audio visible -->
+<audio id="audioPlayer" src="Only.mp3" loop></audio>
+<button id="audioToggle" class="btn-audio">⏸️ Pausar música</button>
+
+  <!-- 🔘 Botones de navegación -->
+  <nav class="nav-buttons">
+    <button id="btn-index" onclick="loadInicio()">Inicio</button>
+    <button id="btn-bienvenida" onclick="loadPage('bienvenida.html', 'style/style1.css', 'bienvenida')">Bienvenida</button>
+    <button id="btn-collage" onclick="loadPage('collage.html', 'style/style2.css', 'collage')">Collage</button>
+    <button id="btn-mundo" onclick="loadPage('mundo.html', 'style/style3.css', 'mundo')">Mundo</button>
+    <button id="btn-myonlylove" onclick="loadPage('myonlylove.html', 'style/style4.css', 'myonlylove')">My Only Love</button>
+    <button id="btn-carta" onclick="loadPage('carta.html', 'style/style5.css', 'carta')">Carta</button>
+  </nav>
+
+    <!-- 📦 Contenido dinámico -->
+  <div id="content">
+    <section>
+      <header>
+    <h1>Welcome to our page my only love 💗</h1>
+    <img src="Img/Family.jpg" class="Family-img" alt="Family">
+    <br>
+    <img src="Img/Family2.jpg" class="Family2" alt="Family2">
+  </header>
+  <br>
+  <br>
+  <br>
+  <br>
+
+      <p>
+      Esta es la página de bienvenida, puedes continuar visualizando la pagina y descubriendo cada cosa 
+      que implemente para que puedieras verla y disfrutarla 
+      </p>
+<br>
+
+      <p>
+       con audio y todo. espero que te guste mucho, la hice con mucho esfuerzo para ti mi amor. 💗
+      </p>
+
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('btn-index').style.display = 'none';
+
+      // 🔓 Activar audio tras interacción si el navegador lo bloquea
+      document.body.addEventListener('click', () => {
+        const audio = document.getElementById('audioPlayer');
+        if (audio.paused) {
+          audio.play().catch(err => console.warn("Error al reproducir:", err));
+        }
+      }, { once: true });
+    });
+  </script>
+
+</body>
+</html>

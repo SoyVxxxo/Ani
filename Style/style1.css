@@ -1,0 +1,91 @@
+/* collage style*/
+body {
+  background: #fddde6; /* Establece el color de fondo blanco para toda la página */
+  font-family: 'Comic Sans MS', cursive; /* Usa una fuente divertida y cursiva, ideal para un diseño romántico y alegre */
+  text-align: center; /* Centra todo el contenido del cuerpo horizontalmente */
+  color: #333; /* Define el color del texto principal en gris oscuro */
+  padding: 20px; /* Agrega espacio interno alrededor del contenido del body */
+  box-shadow: 0 0 10px #f82a6f;
+}
+
+header {
+  background: #ffffff; /* Fondo rosado claro para el encabezado, da un toque romántico */
+  padding: 20px; /* Espacio interno para que el contenido no esté pegado a los bordes */
+  border-radius: 10px; /* Bordes redondeados para un estilo más suave y amigable */
+}
+
+h1 {
+  font-size: 2.5em; /* Tamaño grande para el título principal */
+  color: #000000; /* Color negro para que el título destaque */
+}
+
+.snoopy-img {
+  width: 250px; /* Tamaño fijo para la imagen de Snoopy */
+  margin: 20px auto; /* Espacio alrededor de la imagen y centrado horizontal */
+  border-radius: 15px; /* Bordes redondeados para que la imagen se vea más estética */
+}
+
+.message {
+  font-size: 1.2em; /* Texto ligeramente más grande para facilitar la lectura */
+  margin: 30px auto; /* Espacio alrededor y centrado horizontal */
+  max-width: 600px; /* Limita el ancho para que el texto no se extienda demasiado */
+  background: #ffffff; /* Fondo rosado claro para mantener la coherencia visual */
+  padding: 20px; /* Espacio interno para que el texto no esté pegado a los bordes */
+  border-radius: 10px; /* Bordes redondeados para suavizar el diseño */
+  box-shadow: 0 0 10px #f82a6f; /* Sombra suave para dar profundidad al cuadro del mensaje */
+}
+
+footer {
+  margin-top: 50px; /* Espacio superior para separar el pie de página del contenido anterior */
+  font-size: 2.0em; /* Texto más pequeño para el pie de página */
+  color: #000000; /* Color gris claro para que no compita con el contenido principal */
+}
+
+.nav-buttons {
+  margin-top: 15px;
+}
+
+.nav-btn {
+  display: inline-block;
+  background-color: #ffb6c1;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #ff69b4;
+}
+
+.collage-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .collage-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #f0c0d0;
+      transition: transform 0.3s ease;
+    }
+
+    .collage-img:hover {
+      transform: scale(1.05);
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-top: 20px;
+      color: #000;
+    }
+
+    

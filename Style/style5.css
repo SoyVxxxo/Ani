@@ -1,0 +1,274 @@
+/* cuerpo general */
+body {
+  background: #fddde6; /* fondo rosado */
+  font-family: 'Comic Sans MS', cursive; /* fuente alegre */
+  text-align: center; /* centra contenido */
+  color: #333; /* texto gris oscuro */
+  padding: 20px; /* espacio interno */
+  box-shadow: 0 0 10px #f82a6f; /* sombra decorativa */
+}
+
+/* encabezado */
+header {
+  background: #ffffff; /* fondo blanco */
+  padding: 20px; /* espacio interno */
+  border-radius: 10px; /* bordes suaves */
+}
+
+/* título principal */
+h1 {
+  font-size: 2.5em; /* tamaño grande */
+  color: #000000; /* color negro */
+}
+
+/* imagen de Snoopy */
+.snoopy-img {
+  width: 250px; /* ancho fijo */
+  margin: 20px auto; /* centrado */
+  border-radius: 15px; /* bordes redondeados */
+}
+
+/* bloque del mensaje */
+.message {
+  font-size: 1.2em; /* texto grande */
+  margin: 30px auto; /* centrado */
+  max-width: 600px; /* ancho limitado */
+  background: #ffffff; /* fondo blanco */
+  padding: 20px; /* espacio interno */
+  border-radius: 10px; /* bordes suaves */
+  box-shadow: 0 0 10px #f82a6f; /* sombra rosa */
+}
+
+/* pie de página */
+footer {
+  margin-top: 50px; /* Espacio superior para separar el pie de página del contenido anterior */
+  font-size: 2.0em; /* Texto más pequeño para el pie de página */
+  color: #000000; /* Color gris claro para que no compita con el contenido principal */
+}
+
+/* contenedor de botones */
+.nav-buttons {
+  margin-top: 15px; /* espacio arriba */
+}
+
+/* botón de navegación */
+.nav-btn {
+  display: inline-block; /* en línea */
+  background-color: #ffb6c1; /* fondo rosado */
+  color: #fff; /* texto blanco */
+  text-decoration: none; /* sin subrayado */
+  padding: 10px 20px; /* espacio interno */
+  margin: 5px; /* separación entre botones */
+  border-radius: 20px; /* bordes redondeados */
+  font-weight: bold; /* texto en negrita */
+  transition: background-color 0.3s ease; /* efecto hover */
+}
+
+/* efecto hover en botón */
+.nav-btn:hover {
+  background-color: #ff69b4; /* rosa más fuerte */
+}
+
+/* contenedor de collage */
+.collage-container {
+  display: flex; /* en fila */
+  flex-wrap: wrap; /* varias líneas */
+  justify-content: center; /* centrado */
+  gap: 20px; /* espacio entre imágenes */
+  margin-top: 30px; /* separación arriba */
+}
+
+/* imagen del collage */
+.collage-img {
+  width: 200px; /* ancho fijo */
+  height: 200px; /* alto fijo */
+  object-fit: cover; /* recorte proporcional */
+  border-radius: 15px; /* bordes suaves */
+  box-shadow: 0 0 10px #f0c0d0; /* sombra rosa claro */
+  transition: transform 0.3s ease; /* animación hover */
+}
+
+/* efecto hover en imagen */
+.collage-img:hover {
+  transform: scale(1.05); /* agranda al pasar cursor */
+}
+
+/* subtítulo */
+h2 {
+  font-size: 2em; /* tamaño grande */
+  margin-top: 20px; /* espacio arriba */
+  color: #000; /* color negro */
+}
+
+/* contenido general */
+.contenido {
+  padding: 40px; /* espacio interno */
+  text-align: center; /* centrado */
+}
+
+/* título dentro de contenido */
+.contenido h1 {
+  font-size: 2.5em; /* tamaño grande */
+  margin-bottom: 20px; /* espacio abajo */
+}
+
+/* párrafo dentro de contenido */
+.contenido p {
+  font-size: 1.2em; /* texto grande */
+  max-width: 600px; /* ancho limitado */
+  margin: auto; /* centrado */
+}
+
+/* botón ver carta */
+.btn-ver {
+  margin-top: 40px; /* espacio arriba */
+  padding: 20px 32px; /* tamaño botón */
+  font-size: 18px; /* texto grande */
+  background-color: #ffb6c1; /* fondo rosado */
+  color: white; /* texto blanco */
+  border: none; /* sin borde */
+  border-radius: 30px; /* bordes suaves */
+  
+  font-family: 'Comic Sans MS', cursive; /* fuente divertida */
+  cursor: pointer; /* cursor de mano */
+}
+
+/* hover en botón ver carta */
+.btn-ver:hover {
+  background-color: #ffb6c1; /* mismo color (puedes cambiarlo) */
+}
+
+/* capa borrosa */
+.overlay {
+  position: fixed; /* cubre toda la pantalla */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px); /* efecto borroso */
+  background-color: rgba(255, 255, 255, 0.2); /* capa translúcida */
+  display: none; /* oculta por defecto */
+  justify-content: center; /* centra horizontal */
+  align-items: center; /* centra vertical */
+  z-index: 1000; /* encima de todo */
+  
+  
+}
+
+/* sobre visual */
+.sobre {
+  position: relative;
+  width: 900px; /* ancho del sobre */
+  height: 800px; /* alto del sobre */
+  background: #e0cda9; /* color papel */
+  border: 4px solid #b89b72; /* borde marrón */
+  border-radius: 40px; /* bordes suaves */
+  overflow: hidden; /* oculta contenido fuera */
+  cursor: pointer; /* cursor de mano */
+  box-shadow: 0 0 40px rgba(0,0,0,0.3); /* sombra profunda */
+}
+
+/* solapa del sobre */
+.solapa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65%; /* mitad superior */
+  background: #d4b483; /* color solapa */
+  clip-path: polygon(0 0, 100% 0, 50% 100%); /* forma triangular */
+  transition: transform 0.5s ease; /* animación al abrir */
+  transform-origin: top center; /* punto de giro */
+}
+
+/* carta dentro del sobre */
+.carta {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff0f5; /* rosa lavanda suave */
+  padding: 40px;
+  box-sizing: border-box;
+  font-size: 1.9em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #f82a6f;
+  font-family: 'Comic Sans MS', cursive;
+  transition: top 1s ease-in-out; /* animación más suave */
+}
+
+
+/* animación al abrir sobre */
+.sobre.abierto .solapa {
+  transform: rotateX(180deg); /* gira solapa */
+}
+
+.sobre.abierto .carta {
+  top: 0; /* muestra carta */
+}
+
+@keyframes entradaSuave {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.sobre {
+  animation: entradaSuave 0.6s ease-out;
+}
+
+.corazones {
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.corazon {
+  position: absolute;
+  font-size: 2em;
+  animation: flotar 4s ease-in-out infinite;
+  opacity: 0.8;
+}
+
+.corazon:nth-child(1) { left: -60px; animation-delay: 0s; }
+.corazon:nth-child(2) { left: 0px; animation-delay: 1s; }
+.corazon:nth-child(3) { left: 60px; animation-delay: 2s; }
+
+@keyframes flotar {
+  0% { transform: translateY(0) scale(1); opacity: 0.8; }
+  50% { transform: translateY(-100px) scale(1.2); opacity: 1; }
+  100% { transform: translateY(-200px) scale(0.8); opacity: 0; }
+}
+
+.btn-x {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background-color: #ffb6c1; /* mismo rosa que el botón principal */
+  border: 2px solid #f82a6f; /* borde decorativo */
+  font-size: 20px;
+  color: white;
+  border-radius: 12px; /* bordes suaves pero no redondos */
+  padding: 4px 12px;
+  cursor: pointer;
+  font-family: 'Comic Sans MS', cursive;
+  box-shadow: 0 0 8px #f82a6f;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-x:hover {
+  background-color: #f82a6f; /* rosa más intenso al pasar el mouse */
+  transform: scale(1.05);
+}
+
+.texto-editable {
+  text-align: justify;
+}
