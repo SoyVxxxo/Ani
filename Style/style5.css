@@ -147,12 +147,11 @@ h2 {
   height: 100%;
   backdrop-filter: blur(8px); /* efecto borroso */
   background-color: rgba(255, 255, 255, 0.2); /* capa translúcida */
-  display: none; /* oculta por defecto */
-  justify-content: center; /* centra horizontal */
-  align-items: center; /* centra vertical */
-  z-index: 1000; /* encima de todo */
-  
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
 }
 
 /* sobre visual */
@@ -268,3 +267,4 @@ h2 {
   background-color: #f82a6f; /* rosa más intenso al pasar el mouse */
   transform: scale(1.05);
 }
+
