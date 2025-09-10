@@ -1,80 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome, My Love 💗</title>  
-<link rel="stylesheet" href="Style/style5.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome, My Love 💗</title>
+  <link rel="stylesheet" href="Style/style5.css" />
 </head>
 <body>
   <header>
     <h1>Welcome, My Love 💗</h1>
-<img src="Img/Snoopy6.png" class="snoopy-img" alt="Snoopy">
+    <img src="Img/Snoopy6.png" class="snoopy-img" alt="Snoopy" />
   </header>
 
   <div class="message">
-  <img src="Img/Snoopy5.png" class="girasol-img" alt="Girasol decorativo">
-  <h2>Mi Carta para Ti 🌻</h2>
-  <p>Te amo con todo mi corazón, siempre supe que eras especial. Cada momento contigo ha sido como un rayo de sol en mi vida. Gracias por llenar mi mundo de color, ternura y girasoles.</p>
-<button class="btn-ver" onclick="mostrarSobre()">Ver carta</button>
+    <img src="Img/Snoopy5.png" class="girasol-img" alt="Girasol decorativo" />
+    <h2>Mi Carta para Ti 🌻</h2>
+    <p>
+      Te amo con todo mi corazón, siempre supe que eras especial. Cada momento contigo ha sido como un rayo de sol en mi vida. Gracias por llenar mi mundo de color, ternura y girasoles.
+    </p>
+    <button class="btn-ver" onclick="mostrarSobre()">Ver carta</button>
   </div>
-  
- <div class="overlay" id="overlay">
-  <div class="sobre" onclick="abrirSobre(this)">
-    <div class="solapa"></div>
-    <div class="carta">
-      <button class="btn-x" onclick="cerrarCarta()">✖</button>
-      <h2>My Only Love</h2>
-      <div id="textoCarta" class="texto-editable">
-        <p>
-          Amor, la verdad nunca pensé que me iba a enamorar tanto de una persona y menos pensar 
-          en tener un futuro juntos desde tan joven, pero la verdad tú eres y tienes ese algo que 
-          me encanta... Amo tu personalidad, tu forma de ser, tu físico, absolutamente todo. La verdad 
-          muchas veces te veo y pienso que soy muy afortunado por tener una persona como tú en mi vida y 
-          por eso te valoro demasiado y eres muy especial para mí. Te amo mucho mi princesita hermosa, 
-          feliz aniversario. Espero que te haya gustado la página y la carta. Algún día nos vamos a 
-          casar, viviremos juntos y tendremos nuestros hijitos mi amorcito 💗
-        </p>
-        <p>Con cariño, <br>Alejandro 💙</p>
-      </div>
-      <div class="corazones" id="corazones">
-        <div class="corazon">💗</div>
-        <div class="corazon">💖</div>
-        <div class="corazon">💘</div>
+
+  <!-- SOBRE VISUAL -->
+  <div class="overlay" id="overlay">
+    <div class="sobre" onclick="abrirSobre(this)">
+      <div class="solapa"></div>
+      <div class="carta">
+        <button class="btn-x" onclick="cerrarCarta()">✖</button>
+        <h2>My Only Love</h2>
+        <div id="textoCarta" class="texto-editable">
+          <p>
+            Amor, la verdad nunca pensé que me iba a enamorar tanto de una persona y menos pensar 
+            en tener un futuro juntos desde tan joven, pero la verdad tú eres y tienes ese algo que 
+            me encanta... Amo tu personalidad, tu forma de ser, tu físico, absolutamente todo. La verdad 
+            muchas veces te veo y pienso que soy muy afortunado por tener una persona como tú en mi vida y 
+            por eso te valoro demasiado y eres muy especial para mí. Te amo mucho mi princesita hermosa, 
+            feliz aniversario. Espero que te haya gustado la página y la carta. Algún día nos vamos a 
+            casar, viviremos juntos y tendremos nuestros hijitos mi amorcito 💗
+          </p>
+          <p>Con cariño, <br />Alejandro 💙</p>
+        </div>
+        <div class="corazones" id="corazones">
+          <div class="corazon">💗</div>
+          <div class="corazon">💖</div>
+          <div class="corazon">💘</div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-
-<script>
-   function mostrarSobre() {
-  document.getElementById("overlay").style.display = "flex";
-}
-
-function abrirSobre(elemento) {
-  elemento.classList.toggle("abierto");
-  document.getElementById("corazones").style.display = "block";
-}
-
-function cerrarCarta() {
-  const overlay = document.getElementById("overlay");
-  const corazones = document.getElementById("corazones");
-  const sobre = document.querySelector(".sobre");
-
-  overlay.style.display = "none";
-  corazones.style.display = "none";
-  sobre.classList.remove("abierto");
-}
-
-</script>
   <footer>
-    Hecho con amor por [Alejandro] 💌
+    Hecho con amor por Alejandro 💌
   </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    function mostrarSobre() {
+      document.getElementById("overlay").style.display = "flex";
+    }
+
+    function abrirSobre(elemento) {
+      elemento.classList.toggle("abierto");
+      document.getElementById("corazones").style.display = "block";
+    }
+
+    function cerrarCarta() {
+      const overlay = document.getElementById("overlay");
+      const corazones = document.getElementById("corazones");
+      const sobre = document.querySelector(".sobre");
+
+      overlay.style.display = "none";
+      corazones.style.display = "none";
+      sobre.classList.remove("abierto");
+    }
+  </script>
 </body>
-</html> 
-
-
-
-
-
+</html>
