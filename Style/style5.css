@@ -67,6 +67,7 @@ footer {
 
 /* 🌫️ Capa borrosa */
 .overlay {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -74,7 +75,6 @@ footer {
   height: 100%;
   backdrop-filter: blur(8px);
   background-color: rgba(255, 255, 255, 0.2);
-  display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -82,7 +82,6 @@ footer {
   overflow: hidden;
 }
 
-/* ✉️ Sobre visual */
 .sobre {
   position: relative;
   width: 900px;
@@ -95,6 +94,11 @@ footer {
   box-shadow: 0 0 40px rgba(0,0,0,0.3);
   animation: entradaSuave 0.6s ease-out;
 }
+
+.sobre.abierto .carta {
+  top: 0;
+}
+
 
 /* 🔺 Solapa del sobre */
 .solapa {
@@ -202,3 +206,4 @@ footer {
   pointer-events: none; /* evita edición */
   user-select: none;     /* evita selección */
 }
+
