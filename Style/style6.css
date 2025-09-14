@@ -20,11 +20,28 @@ h1 {
 }
 
 .imagen-central {
-  width: 250px;
+  max-width: 100%;
+  width: 300px;
+  height: auto;
   border-radius: 20px;
   box-shadow: 0 0 12px #f82a6f;
 }
 
+.imagen-central2 {
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 12px #f82a6f;
+}
+
+.imagen-central3 {
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 12px #f82a6f;
+}
 .mensaje {
   max-width: 600px;
   margin: 30px auto;
