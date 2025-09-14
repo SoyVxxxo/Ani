@@ -15,17 +15,15 @@ h1 {
 }
 
 /* Contenedor de imágenes principales */
-.imagenes-principales {
+.collage-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
-  max-width: 1000px;
-  margin: 20px auto;
+  margin-top: 30px;
 }
 
-/* Imágenes principales */
-.imagen-central {
+.collage-img {
   width: 180px;
   height: 180px;
   object-fit: cover;
@@ -33,6 +31,11 @@ h1 {
   box-shadow: 0 0 10px #f0c0d0;
   transition: transform 0.3s ease;
 }
+
+.collage-img:hover {
+  transform: scale(1.05);
+}
+
 
 /* Mensaje central */
 .mensaje {
