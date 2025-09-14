@@ -31,6 +31,8 @@ h1 {
   border-radius: 15px;
   box-shadow: 0 0 10px #f0c0d0;
   transition: transform 0.3s ease;
+  border-radius: 20px;           /* Bordes redondeados */
+  box-shadow: 0 0 12px #f82a6f;  /* Sombra rosa suave */
 }
 
 .collage-img:hover {
