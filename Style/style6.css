@@ -19,29 +19,18 @@ h1 {
   margin-top: 20px;
 }
 
-.imagen-central {
-  max-width: 100%;
-  width: 300px;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0 0 12px #f82a6f;
-}
-
-.imagen-central2 {
-  max-width: 100%;
-  width: 300px;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0 0 12px #f82a6f;
-}
-
+/* Imágenes principales numeradas */
+.imagen-central1,
+.imagen-central2,
 .imagen-central3 {
+  width: 250px;
   max-width: 100%;
-  width: 300px;
   height: auto;
   border-radius: 20px;
   box-shadow: 0 0 12px #f82a6f;
 }
+
+/* Mensaje central */
 .mensaje {
   max-width: 600px;
   margin: 30px auto;
@@ -52,6 +41,7 @@ h1 {
   font-size: 1.2em;
 }
 
+/* Collage numerado */
 .collage-container {
   display: flex;
   flex-wrap: wrap;
@@ -60,7 +50,11 @@ h1 {
   margin-top: 30px;
 }
 
-.collage-img {
+.collage-img1,
+.collage-img2,
+.collage-img3,
+.collage-img4,
+.collage-img5 {
   width: 180px;
   height: 180px;
   object-fit: cover;
@@ -69,10 +63,15 @@ h1 {
   transition: transform 0.3s ease;
 }
 
-.collage-img:hover {
+.collage-img1:hover,
+.collage-img2:hover,
+.collage-img3:hover,
+.collage-img4:hover,
+.collage-img5:hover {
   transform: scale(1.05);
 }
 
+/* Footer */
 footer {
   margin-top: 50px;
   font-size: 1.2em;
