@@ -26,12 +26,12 @@ h1 {
 
 /* Imágenes principales */
 .imagen-central {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0 0 12px #f82a6f;
-  display: block;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #f0c0d0;
+  transition: transform 0.3s ease;
 }
 
 /* Mensaje central */
