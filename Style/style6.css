@@ -1,0 +1,79 @@
+body {
+  background: #fddde6;
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #000;
+}
+
+.imagenes-principales {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.imagen-central {
+  width: 250px;
+  border-radius: 20px;
+  box-shadow: 0 0 12px #f82a6f;
+}
+
+.mensaje {
+  max-width: 600px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #f82a6f;
+  font-size: 1.2em;
+}
+
+.collage-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.collage-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #f0c0d0;
+  transition: transform 0.3s ease;
+}
+
+.collage-img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 1.2em;
+  color: #000;
+}
+
+/* Animación suave */
+.fade-in {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
